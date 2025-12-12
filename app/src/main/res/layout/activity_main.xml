@@ -41,7 +41,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="PythonMentor"
-                        android:textSize="20dp"
+                        android:textSize="25sp"
                         android:textColor="@color/text_color"
                         android:gravity="center"
                         android:textStyle="bold"/>
@@ -55,25 +55,42 @@
                 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="20dp"/>
-                            
+                    android:layout_height="40dp"/>
+
                 <LinearLayout
+                    android:id="@+id/definition"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/border"
+                    android:orientation="horizontal"
                     android:gravity="center">
-                    
-                    
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="15sp"
                         android:textColor="@color/text_color"
                         android:gravity="center"
-                        android:text="PythonMentor — это приложение-тренажёр для систематического изучения Python через интерактивные уроки, автоматическую проверку кода и отслеживание прогресса."
-                    />
-            
+                        android:textStyle="italic"
+                        android:text="PythonMentor — это приложение-тренажёр для систематического изучения Python через интерактивные уроки, автоматическую проверку кода и отслеживание прогресса."/>
                 </LinearLayout>
                 
-    </LinearLayout>
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="1000dp"/>
+
+                <com.example.karasik_project.ContactFooterView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"/>
+
+
+
+
+            </LinearLayout>
 
 
 
