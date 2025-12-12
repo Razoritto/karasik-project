@@ -12,6 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Karasikproject">
         <activity
+            android:name=".theory_page"
+            android:exported="false"
+            android:label="@string/title_activity_theory_page"
+            android:theme="@style/Theme.Karasikproject.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

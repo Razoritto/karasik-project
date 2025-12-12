@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#0C0C0E"
+    android:id="@+id/navPanel"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_panel_mainpage"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#0C0C0E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <View
+            android:id="@+id/top_border"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAboutUs"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/blue_viz"
+            android:text="О нас"
+            android:textColor="@color/text_color"
+            android:drawableTop="@android:drawable/ic_dialog_info"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:iconGravity="textTop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btn2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.34"
+            app:layout_constraintHeight_default="percent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:backgroundTint="@color/blue_viz"
+            android:text="Главная"
+            android:drawableTop="@drawable/baseline_home_24"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:iconGravity="textTop"
+            android:textColor="@color/text_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnTheory"
+            app:layout_constraintStart_toEndOf="@id/btnAboutUs"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintHeight_default="percent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTheory"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Теория"
+            android:textColor="@color/text_color"
+            android:backgroundTint="@color/blue_viz"
+            android:drawableTop="@drawable/import_contacts_24dp_000000"
+            android:drawablePadding="4dp"
+            android:padding="8dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            app:iconGravity="textTop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btn2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintHeight_default="percent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>
