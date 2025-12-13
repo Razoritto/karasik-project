@@ -37,14 +37,35 @@
                         android:src="@drawable/ava"
                         android:layout_gravity="center"/>
 
-                    <TextView
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="PythonMentor"
-                        android:textSize="20dp"
-                        android:textColor="@color/text_color"
-                        android:gravity="center"
-                        android:textStyle="bold"/>
+                        android:layout_marginStart="60dp"
+                        android:layout_marginEnd="60dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="PythonMentor"
+                            android:textSize="20dp"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Уроки"
+                            android:textSize="20dp"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
 
                     <Space
                         android:layout_width="wrap_content"
@@ -60,16 +81,131 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center">
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
 
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/text_color"
                         android:gravity="center"
-                        android:text="test"
-                        />
+                        android:text="Введение в курс"
+                        android:textColor="@color/text_color"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color"
+                        android:backgroundTint="@color/blue_viz"
+                        android:gravity="center"
+                        android:text="Перейти к обучению"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Переменные"
+                        android:textColor="@color/text_color"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color"
+                        android:backgroundTint="@color/blue_viz"
+                        android:gravity="center"
+                        android:text="Перейти к обучению"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Оператор ветвления"
+                        android:textColor="@color/text_color"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color"
+                        android:backgroundTint="@color/blue_viz"
+                        android:gravity="center"
+                        android:text="Перейти к обучению"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/border"
+                    android:orientation="vertical">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Вложенные операторы ветвления elif"
+                        android:textColor="@color/text_color"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/text_color"
+                        android:backgroundTint="@color/blue_viz"
+                        android:gravity="center"
+                        android:text="Перейти к обучению"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
