@@ -1,33 +1,23 @@
 package com.example.karasik_project;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ScrollView;
-import android.widget.ViewFlipper;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-
-public class MainActivity extends AppCompatActivity {
+public class theory_variables extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_theory_variables);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -40,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, theory_page.class);
+                Intent intent = new Intent(theory_variables.this, theory_page.class);
 
 
                 startActivity(intent);
@@ -48,10 +38,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button btnMainPage = findViewById(R.id.btnMainPage);
-        ScrollView scrollView = findViewById(R.id.scrollView);
 
-        btnMainPage.setOnClickListener(v -> {
-            scrollView.smoothScrollTo(0, 0);
+        btnMainPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_variables.this, MainActivity.class);
+
+
+                startActivity(intent);
+            }
+
         });
     }
 }

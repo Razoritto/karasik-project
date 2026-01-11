@@ -99,6 +99,7 @@
                         android:textSize="15sp"/>
 
                     <Button
+                        android:id="@+id/butt_theory_base"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -132,6 +133,7 @@
                         android:textSize="15sp"/>
 
                     <Button
+                        android:id="@+id/butt_theory_variables"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -165,6 +167,7 @@
                         android:textSize="15sp"/>
 
                     <Button
+                        android:id="@+id/butt_theory_if"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
@@ -198,6 +201,7 @@
                         android:textSize="15sp"/>
 
                     <Button
+                        android:id="@+id/butt_theory_elif"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"

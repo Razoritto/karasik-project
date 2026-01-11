@@ -26,7 +26,7 @@ public class BottomNavigationPanel extends ConstraintLayout {
         LayoutInflater.from(context).inflate(R.layout.nav_panel, this, true);
 
         btnAbout = findViewById(R.id.btnAboutUs);
-        btnHome = findViewById(R.id.btn2);
+        btnHome = findViewById(R.id.btnMainPage);
         btnTheory = findViewById(R.id.btnTheory);
     }
 

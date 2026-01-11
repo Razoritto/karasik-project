@@ -40,13 +40,39 @@ public class theory_page extends AppCompatActivity {
             }
         });
 
-        Button btnMainPage = findViewById(R.id.btn2);
+        Button btnMainPage = findViewById(R.id.btnMainPage);
 
         btnMainPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 Intent intent = new Intent(theory_page.this, MainActivity.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+        Button btnTheoryBase = findViewById(R.id.butt_theory_base);
+
+        btnTheoryBase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_page.this, theory_base.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+        Button btnTheoryVariables = findViewById(R.id.butt_theory_variables);
+
+        btnTheoryVariables.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_page.this, theory_variables.class);
 
 
                 startActivity(intent);
