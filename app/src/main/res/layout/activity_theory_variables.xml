@@ -189,6 +189,307 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ввод переменной с клавиатуры"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <!-- Строка 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:text="n = int(input())"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ввод целого числа"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="d = float(input())"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ввод дробного числа"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 3 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="s = input()"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Ввод строки"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Вывод переменных на экран"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <!-- Строка 1: Простой вывод -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:text="print(n)"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Вывод значения переменной"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 2: Вывод текста -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text='print("Hello")'
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Вывод текста"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 3: Вывод нескольких значений -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="print(n, d, s)"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Вывод нескольких значений"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 4: Форматированный вывод -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text='print(f"n={n}")'
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Форматированный вывод"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 5: Вывод с разделителем -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text='print(n, d, sep=", ")'
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Вывод с разделителем"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 6: Вывод без перевода строки -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text='print(n, end=" ")'
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Вывод без перевода строки"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
                 <com.example.karasik_project.ContactFooterView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -52,8 +52,39 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp">
 
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Оператор ветвления"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/if_example1"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
 
 
 
