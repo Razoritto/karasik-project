@@ -12,11 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Karasikproject">
         <activity
-            android:name=".theory_variables"
+            android:name=".theory_elif"
             android:exported="false" />
         <activity
-            android:name=".theory_base"
+            android:name=".theory_if"
             android:exported="false" />
+        <activity
+            android:name=".theory_variables"
+            android:exported="false" />
+
         <activity
             android:name=".theory_page"
             android:exported="false"

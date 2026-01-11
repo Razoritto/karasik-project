@@ -11,25 +11,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.karasik_project.databinding.ActivityTheoryBaseBinding;
-
-
-public class theory_base extends AppCompatActivity {
-
-    private ActivityTheoryBaseBinding binding;
-
+public class theory_elif extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_theory_base);
+        setContentView(R.layout.activity_theory_elif);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
-
-
         });
 
         Button btnTheory = findViewById(R.id.btnTheory);
@@ -38,7 +30,7 @@ public class theory_base extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(theory_base.this, theory_page.class);
+                Intent intent = new Intent(theory_elif.this, theory_page.class);
 
 
                 startActivity(intent);
@@ -51,13 +43,12 @@ public class theory_base extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(theory_base.this, MainActivity.class);
+                Intent intent = new Intent(theory_elif.this, MainActivity.class);
 
 
                 startActivity(intent);
             }
 
         });
-
     }
 }

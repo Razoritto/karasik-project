@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.widget.Button;
+import android.widget.ScrollView;
 
 import com.example.karasik_project.databinding.ActivityTheoryPageBinding;
 
@@ -28,16 +29,10 @@ public class theory_page extends AppCompatActivity {
 
 
         Button btnTheory = findViewById(R.id.btnTheory);
+        ScrollView scrollView = findViewById(R.id.scrollView);
 
-        btnTheory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(theory_page.this, theory_page.class);
-
-
-                startActivity(intent);
-            }
+        btnTheory.setOnClickListener(v -> {
+            scrollView.smoothScrollTo(0, 0);
         });
 
         Button btnMainPage = findViewById(R.id.btnMainPage);
@@ -53,18 +48,6 @@ public class theory_page extends AppCompatActivity {
             }
         });
 
-        Button btnTheoryBase = findViewById(R.id.butt_theory_base);
-
-        btnTheoryBase.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(theory_page.this, theory_base.class);
-
-
-                startActivity(intent);
-            }
-        });
 
         Button btnTheoryVariables = findViewById(R.id.butt_theory_variables);
 
@@ -73,6 +56,32 @@ public class theory_page extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(theory_page.this, theory_variables.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+        Button btnTheoryIf = findViewById(R.id.butt_theory_if);
+
+        btnTheoryIf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_page.this, theory_if.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+        Button btnTheoryElif = findViewById(R.id.butt_theory_elif);
+
+        btnTheoryElif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_page.this, theory_elif.class);
 
 
                 startActivity(intent);
