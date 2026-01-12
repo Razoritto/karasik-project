@@ -25,26 +25,7 @@
             android:background="@android:color/black"
             app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnAboutUs"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:backgroundTint="@color/blue_viz"
-            android:text="О нас"
-            android:textColor="@color/text_color"
-            android:drawableTop="@android:drawable/ic_dialog_info"
-            android:drawablePadding="4dp"
-            android:padding="8dp"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            app:iconGravity="textTop"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/btnMainPage"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.34"
-            app:layout_constraintHeight_default="percent"/>
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnMainPage"
@@ -62,9 +43,8 @@
             android:textColor="@color/text_color"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/btnTheory"
-            app:layout_constraintStart_toEndOf="@id/btnAboutUs"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintWidth_percent="0.5"
             app:layout_constraintHeight_default="percent"/>
 
         <com.google.android.material.button.MaterialButton
@@ -84,7 +64,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/btnMainPage"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.33"
+            app:layout_constraintWidth_percent="0.5"
             app:layout_constraintHeight_default="percent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

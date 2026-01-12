@@ -11,13 +11,13 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class theory_variables extends AppCompatActivity {
+public class theory_for extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_theory_variables);
+        setContentView(R.layout.activity_theory_for);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -30,10 +30,10 @@ public class theory_variables extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(theory_variables.this, theory_page.class);
-
+                Intent intent = new Intent(theory_for.this, theory_page.class);
 
                 startActivity(intent);
+
             }
         });
 
@@ -43,13 +43,14 @@ public class theory_variables extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(theory_variables.this, MainActivity.class);
+                Intent intent = new Intent(theory_for.this, MainActivity.class);
 
                 startActivity(intent);
 
             }
-
         });
+
+
 
         Button btnReturn = findViewById(R.id.btnReturn);
 
@@ -57,14 +58,12 @@ public class theory_variables extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(theory_variables.this, theory_page.class);
+                Intent intent = new Intent(theory_for.this, theory_page.class);
 
                 startActivity(intent);
 
             }
 
         });
-
-
     }
 }

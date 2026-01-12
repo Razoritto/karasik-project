@@ -46,6 +46,15 @@
                         android:gravity="center"
                         android:textStyle="bold"/>
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Оператор ветвления"
+                        android:textSize="20sp"
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:textStyle=""/>
+
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"/>
@@ -74,20 +83,318 @@
                         android:layout_height="200dp"
                         android:src="@drawable/if_example1"/>
 
-
-
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp">
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Оператор ветвления"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:background="@drawable/border"
+                        android:padding="10dp"/>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal">
 
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/border"
+                            android:text="Схема полного ветвления"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:padding="10dp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_weight="1"
+                            android:text="Код"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:padding="10dp"/>
 
                     </LinearLayout>
 
 
 
+                    <ImageView
+                        android:background="@drawable/border"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/if_theory1"/>
 
+                </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Оператор ветвления"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <!-- Шапка -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:text="Операция"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="Описание"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 1 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/border"
+                                android:text=" == "
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="равно"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 2 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:background="@drawable/border"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="&lt;"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="меньше"
+                                android:background="@drawable/border"
+                                android:padding="12dp"
+                                android:textColor="@color/text_color"/>
+                        </LinearLayout>
+
+                        <!-- Строка 3 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="&gt;"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="больше"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                        </LinearLayout>
+
+                        <!-- Строка 4 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="&lt;="
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="меньше или равно"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                        </LinearLayout>
+
+                        <!-- Строка 5 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="&gt;="
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="больше или равно
+"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                        </LinearLayout>
+
+                        <!-- Строка 6 -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="!="
+                                android:gravity="center"
+                                android:padding="12dp"
+                                android:fontFamily="monospace"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="не равно"
+                                android:padding="12dp"
+                                android:background="@drawable/border"
+                                android:textColor="@color/text_color"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnReturn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/text_color"
+                    android:backgroundTint="@color/blue_viz"
+                    android:gravity="center"
+                    android:text="Вернуться к теории"
+                    android:textStyle="bold" />
+
+                <com.example.karasik_project.ContactFooterView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"/>   6
+            </LinearLayout>
         </ScrollView>
 
 

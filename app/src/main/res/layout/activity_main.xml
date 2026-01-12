@@ -58,44 +58,94 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"/>
 
-                <LinearLayout
-                    android:id="@+id/definition"
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginEnd="60dp"
-                    android:background="@drawable/border"
-                    android:orientation="horizontal"
-                    android:gravity="center">
+                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
+                    <LinearLayout
+                        android:id="@+id/definition"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:padding="16dp"
-                        android:textSize="15sp"
-                        android:textColor="@color/text_color"
+                        android:background="@drawable/border"
+                        android:orientation="horizontal"
                         android:gravity="center"
-                        android:textStyle="italic"
-                        android:text="PythonMentor — это приложение-тренажёр для систематического изучения Python через интерактивные уроки, автоматическую проверку кода и отслеживание прогресса."/>
-                </LinearLayout>
-                
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="1000dp"/>
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginHorizontal="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/text_color"
+                            android:gravity="center"
+                            android:textStyle="italic"
+                            android:text="PythonMentor — это приложение-тренажёр для систематического изучения Python через интерактивные уроки, автоматическую проверку кода и отслеживание прогресса."/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/definition"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="40dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Рекомендуем продолжить"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/text_color"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Переменные"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="@color/text_color"
+                            android:layout_marginTop="8dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Изучите основы переменных в программировании"
+                            android:textSize="12sp"
+                            android:textColor="@color/text_color"
+                            android:layout_marginTop="4dp"/>
+
+                        <Button
+                            android:id="@+id/butt_theory_variables"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/text_color"
+                            android:backgroundTint="@color/blue_viz"
+                            android:gravity="center"
+                            android:text="Продолжить"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <com.example.karasik_project.ContactFooterView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="32dp"/>
 
-
-
-
             </LinearLayout>
-
-
-
-    </ScrollView>
+        </ScrollView>
 
 
         <com.example.karasik_project.BottomNavigationPanel

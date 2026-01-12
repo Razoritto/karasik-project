@@ -49,20 +49,14 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Оперетор ветвления."
+                        android:text="Определенный
+цикл for"
                         android:textSize="20sp"
                         android:textColor="@color/text_color"
                         android:gravity="center"
                         android:textStyle=""/>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Вложенные ветвления"
-                        android:textSize="20sp"
-                        android:textColor="@color/text_color"
-                        android:gravity="center"
-                        android:textStyle=""/>
+
 
                     <Space
                         android:layout_width="wrap_content"
@@ -75,12 +69,12 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:background="@drawable/border"
-                    android:layout_margin="20dp">
+                    android:layout_margin="10dp">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Оператор elif"
+                        android:text="Синтаксис"
                         android:textStyle="bold"
                         android:textColor="@color/text_color"
                         android:textSize="20sp"
@@ -90,7 +84,31 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/elif_theory1"/>
+                        android:src="@drawable/for_theory1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Напечатайте слово  10 раз"
+                        android:textStyle="bold"
+                        android:textColor="@color/text_color"
+                        android:textSize="20sp"
+                        android:textAlignment="center"
+                        android:padding="10dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/for_example1"/>
 
                 </LinearLayout>
 

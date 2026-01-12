@@ -89,5 +89,19 @@ public class theory_page extends AppCompatActivity {
         });
 
 
+
+        Button btnTheoryFor = findViewById(R.id.butt_theory_for);
+        btnTheoryFor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_page.this, theory_for.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

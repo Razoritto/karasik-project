@@ -47,11 +47,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
         Button btnMainPage = findViewById(R.id.btnMainPage);
         ScrollView scrollView = findViewById(R.id.scrollView);
 
         btnMainPage.setOnClickListener(v -> {
             scrollView.smoothScrollTo(0, 0);
         });
+
+        Button btnTheoryVar = findViewById(R.id.butt_theory_variables);
+        btnTheoryVar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, theory_variables.class);
+
+
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

@@ -21,6 +21,7 @@ public class theory_elif extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
             return insets;
         });
 
@@ -32,8 +33,8 @@ public class theory_elif extends AppCompatActivity {
 
                 Intent intent = new Intent(theory_elif.this, theory_page.class);
 
-
                 startActivity(intent);
+
             }
         });
 
@@ -45,8 +46,23 @@ public class theory_elif extends AppCompatActivity {
 
                 Intent intent = new Intent(theory_elif.this, MainActivity.class);
 
+                startActivity(intent);
+
+            }
+        });
+
+
+
+        Button btnReturn = findViewById(R.id.btnReturn);
+
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_elif.this, theory_page.class);
 
                 startActivity(intent);
+
             }
 
         });

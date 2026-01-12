@@ -50,5 +50,21 @@ public class theory_if extends AppCompatActivity {
             }
 
         });
+
+
+
+        Button btnReturn = findViewById(R.id.btnReturn);
+
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(theory_if.this, theory_page.class);
+
+                startActivity(intent);
+
+            }
+
+        });
     }
 }
